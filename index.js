@@ -77,6 +77,9 @@ function Dog(name) {
 };
 
 Dog.prototype = Object.create(Pet.prototype);
+Dog.prototype.speak = function() {
+    console.log('Woof woof!');
+};
 
 //Cat constructor
 function Cat(name) {
@@ -91,6 +94,9 @@ function Cat(name) {
 };
 
 Cat.prototype = Object.create(Pet.prototype);
+Cat.prototype.speak = function() {
+    console.log('Meow meow!');
+};
 
 //Bird constructor
 function Bird(name) {
@@ -105,3 +111,6 @@ function Bird(name) {
 };
 
 Bird.prototype = Object.create(Pet.prototype);
+Bird.prototype.speak = function() {
+    console.log(`${this.name} want a cracker!`);
+};
