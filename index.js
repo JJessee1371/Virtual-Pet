@@ -114,3 +114,23 @@ Bird.prototype = Object.create(Pet.prototype);
 Bird.prototype.speak = function() {
     console.log(`${this.name} want a cracker!`);
 };
+
+let dog = document.getElementById('dog-check');
+let cat = document.getElementById('cat-check');
+let bird = document.getElementById('bird-check');
+
+//Form submission function
+function formSubmit() {
+    let name = document.getElementById('pet-name').value;
+
+    if(dog.checked) {
+        let userDog = new Dog(name);
+        console.log(userDog);
+    } else if(cat.checked) {
+        let userCat = new Cat(name);
+        console.log(userCat);
+    } else if(bird.checked) {
+        let userBird = new Bird(name);
+        console.log(userBird);
+    }
+};
