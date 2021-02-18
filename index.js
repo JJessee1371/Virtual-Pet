@@ -11,7 +11,7 @@ Pet.prototype = {
 
     feed: function() {
         if(this.hungry) {
-            console.log('That was delicious! I could use a nap now.');
+            console.log('Nom nom nom. That was delicious! I could use a nap now.');
             this.hungry = false;
             this.sleepy = true;
         } else {
